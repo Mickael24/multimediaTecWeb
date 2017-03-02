@@ -2,7 +2,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const data = require('../data/players')
 
-function AdminRouter() {
+function PlayerRouter() {
   let router = express();
 
   router.use(bodyParser.json({ limit: '100mb' }));
@@ -15,7 +15,7 @@ function AdminRouter() {
     })
     .post(function (req, res) {
       console.log('post');
-      res.send('post')
+      res.send('post');
     });
 
   router.route('/team')
@@ -27,4 +27,4 @@ function AdminRouter() {
   return router;
 }
 
-module.exports = AdminRouter;
+module.exports = PlayerRouter;

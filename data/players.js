@@ -1,6 +1,10 @@
 module.exports = function () {
   return {
-    player: 1,
-    player2: 2
+    player: {
+      name: 'Dean'
+    },
+    player2: {
+      name: 'SAM'
+    }
   }
 };

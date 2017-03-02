@@ -1,10 +1,10 @@
 const express = require('express');
-let AdminAPI = require('./server/admin');
+let PlayerAPI = require('./server/players');
 
 function initialize() {
   let api = express();
 
-  api.use('/admin', AdminAPI());
+  api.use('/team', PlayerAPI());
 
   return api;
 }
