@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
   res.end('Hello World\n');
 });
 */
-let router = require('./router');
+//let router = require('./router');
 var app = express();
 app.use(router.initialize());
 
